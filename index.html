@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="elisc_tm_mobile_menu">
           <div class="inner">
             <div class="wrapper">
@@ -315,7 +315,11 @@
                         </div>
                       </li>
                       <li>
-                        <img class="popup_image" src="img/experience/2.jpg" alt />
+                        <img
+                          class="popup_image"
+                          src="img/experience/2.jpg"
+                          alt
+                        />
                         <div class="list_inner">
                           <div class="short">
                             <div class="job">
@@ -391,9 +395,18 @@
                             ></div>
                           </div>
                           <div class="details">
+                            <span class="category">My Portfolio</span> |
                             <span class="category"
-                              ><a href="https://github.com/SahilBhutani02/eshop"
-                                >eshop - online Shopping</a
+                              ><a
+                                href="https://github.com/SahilBhutani02/Sahil_Portfolio"
+                                >Link</a
+                              ></span
+                            >
+                            |
+                            <span class="category"
+                              ><a
+                                href="https://sahil-portfolio-roan.vercel.app/"
+                                >Demo</a
                               ></span
                             >
                           </div>
@@ -410,9 +423,18 @@
                           </div>
                           <div class="details">
                             <span class="category"
-                              ><a
-                                href="https://github.com/SahilBhutani02/libraryManager"
-                                >Library Manager System</a
+                              >eshop - Online Shopping</span
+                            >
+                            |
+                            <span class="category"
+                              ><a href="https://github.com/SahilBhutani02/eshop"
+                                >Link</a
+                              ></span
+                            >
+                            |
+                            <span class="category"
+                              ><a href="https://eshop-rouge-nine.vercel.app/"
+                                >Demo</a
                               ></span
                             >
                           </div>
@@ -428,10 +450,61 @@
                             ></div>
                           </div>
                           <div class="details">
+                            <span class="category">Blog Application</span> |
+                            <span class="category"
+                              ><a
+                                href="https://github.com/SahilBhutani02/blogApp"
+                                >Link</a
+                              ></span
+                            >
+                            |
+                            <span class="category"
+                              ><a href="https://blogapp-1-qyyr.onrender.com/"
+                                >Demo</a
+                              ></span
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list_inner">
+                          <div class="image">
+                            <img src="img/thumbs/31-36.jpg" alt />
+                            <div
+                              class="main"
+                              data-img-url="img/project/4.png"
+                            ></div>
+                          </div>
+                          <div class="details">
+                            <span class="category">Library Manager System</span>
+                            |
+                            <span class="category"
+                              ><a
+                                href="https://github.com/SahilBhutani02/libraryManager"
+                                >Link</a
+                              ></span
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list_inner">
+                          <div class="image">
+                            <img src="img/thumbs/31-36.jpg" alt />
+                            <div
+                              class="main"
+                              data-img-url="img/project/5.png"
+                            ></div>
+                          </div>
+                          <div class="details">
+                            <span class="category"
+                              >Poll Application System</span
+                            >
+                            |
                             <span class="category"
                               ><a
                                 href="https://github.com/SahilBhutani02/Poll_App"
-                                >Poll Application System</a
+                                >Link</a
                               ></span
                             >
                           </div>
@@ -521,9 +594,6 @@
                 </div>
               </div>
             </div>
-
-           
-
           </div>
         </div>
       </div>
@@ -535,27 +605,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-      ;(function () {
-        emailjs.init('1oe2ZK9thKk6F7Mne')
-      })()
+      (function () {
+        emailjs.init("1oe2ZK9thKk6F7Mne");
+      })();
     </script>
     <script>
       document
-        .getElementById('contact-form')
-        .addEventListener('submit', function (e) {
-          e.preventDefault()
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-          emailjs.sendForm('service_6f5884x', 'template_qiixutq', this).then(
+          emailjs.sendForm("service_6f5884x", "template_qiixutq", this).then(
             () => {
-              alert('Message sent successfully!')
-              this.reset()
+              alert("Message sent successfully!");
+              this.reset();
             },
             (error) => {
-              console.error('FAILED...', error)
-              alert('Something went wrong. Please try again.')
+              console.error("FAILED...", error);
+              alert("Something went wrong. Please try again.");
             }
-          )
-        })
+          );
+        });
     </script>
   </body>
 </html>
